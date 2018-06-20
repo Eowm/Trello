@@ -14,11 +14,12 @@ body .board {
 body .board h1 {
   text-align: center;
   color: #655686;
-  padding: 50px 0 0 0;
+  padding: 20px 0 0 0;
   font-size: 60px;
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 3px;
+  margin: 0;
 }
 
 body .board .big {
@@ -38,8 +39,6 @@ body .board .create-column {
   height: 60px;
   font-size: 15px;
   text-transform: uppercase;
-  border-radius: 3px;
-  box-shadow: 0px;
 }
 
 body .board .create-column:hover {
@@ -52,7 +51,6 @@ body .board .column-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  border: 2px solid black;
   background-color: #655686;
   max-width: 1200px;
   margin: auto;

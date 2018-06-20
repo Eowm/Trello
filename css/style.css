@@ -8,4 +8,12 @@ body .board {
   margin: 0 auto;
 }
 
+body #toFlex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -1,16 +1,102 @@
 body {
-	padding: 0;
-	margin: 0;
-	.board { 
-		text-align: center;
-		margin: 0 auto;
-	}
-	#toFlex {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: nowrap;
-		justify-content: center;
-		align-items: center;
-	}
-}
-
+   padding:0;
+   margin:0 auto;
+   background-color: #9E9CA3;
+    .board {
+       max-width: 1200px;
+       margin: 0 auto;
+       text-align: center;
+       	background-color:#EFEDE3;
+        h1 {
+            text-align: center;
+            color: #655686;
+            padding: 50px 0 0 0 ;
+            font-size: 60px;
+            text-transform: uppercase;
+             font-weight: bold;
+             letter-spacing: 3px;	
+        }
+        .big{
+        	width: 100px;
+        	height: 40px;
+        }
+        button {
+            margin: 0 auto;
+            width: 30px;
+        }
+        .create-column {
+        	
+					background-color: #2CA60C;
+					border-color: #2CA60C;
+           width: 150px;
+        	height: 60px;
+        	font-size: 15px;
+        	text-transform:uppercase;
+        	border-radius: 3px;
+        	box-shadow: 0px;
+            &:hover {
+            	background-color:green;
+            	font-weight:bold;
+            	box-shadow: 0px 0px 0px 1px;
+                
+            }
+        }
+        .column-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            border: 2px solid black;
+            background-color: #655686;
+            max-width: 1200px;
+            margin: auto;
+            padding: 30px 0;
+            margin-top: 50px;
+            .column {
+               background-color:#EFEDE3;
+               width: 300px;
+               min-height: 200px;
+               margin: 10px;
+               text-align: center;
+               position: relative;
+                h2 {
+                	padding-bottom: 10px;
+                	color: #655686;
+                	text-transform: uppercase;
+                	font-size: 30px;
+                	letter-spacing: 2px;
+                }
+                .btn-delete {
+                    width: 100%;
+                    background-color: #F3002B;	
+                    border-color: #F3002B;
+                    cursor: pointer;
+                }
+                .add-card {
+					width:100%;
+					background-color: #2CA60C;
+					border-color: #2CA60C;
+					cursor: pointer;
+                }
+                .column-card-list {
+                	padding: 0;
+                   list-style: none;
+                   text-align: center;
+                   display: flex;
+            		flex-wrap: wrap;
+           			justify-content: space-around;
+                    .card {
+                        background-color: darkgray;
+                        min-width: 100px;
+                        margin: 20px;
+                        max-width: 260px;
+                        .card-description {
+                            font-style: italic;
+                            font-weight: bold;
+                            min-height: 50px;
+                        }
+                    }
+                }    
+            }
+        }
+    }
+}	

@@ -24,7 +24,7 @@ function Column(name) {
 
   this.id = randomString();
   this.name = name;
-  this.element = generateTemplate('column-template', { name: this.name });
+  this.element = generateTemplate('column-template', { name: this.name, id: this.id })
   this.element.querySelector('.column').addEventListener('click', function (event) {
 	  if (event.target.classList.contains('btn-delete')) {
 	    self.removeColumn();
@@ -87,6 +87,24 @@ document.querySelector('#board .create-column').addEventListener('click', functi
     var column = new Column(name);
     board.addColumn(column);
 });
+
+// CREATING COLUMNS
+var todoColumn = new Column('To do');
+var inprogressColumn = new Column('In progress');
+var doneColumn = new Column('Done');
+
+// ADDING COLUMNS TO THE BOARD
+board.addColumn(todoColumn);
+board.addColumn(inprogressColumn);
+board.addColumn(doneColumn);
+
+// CREATING CARDS
+var card1 = new Card('New task');
+var card2 = new Card('Create kanban boards');
+
+// ADDING CARDS TO COLUMNS
+todoColumn.addCard(card1);
+inprogressColumn.addCard(card2);
 
 
 

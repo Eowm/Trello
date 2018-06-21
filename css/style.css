@@ -34,16 +34,16 @@ body .board button {
 }
 
 body .board .create-column {
-  background-color: #2CA60C;
-  border-color: #2CA60C;
+  background-color: #023855;
+  border: none;
   width: 150px;
   height: 60px;
   font-size: 15px;
   text-transform: uppercase;
+  color: white;
 }
 
 body .board .create-column:hover {
-  background-color: green;
   font-weight: bold;
   box-shadow: 0px 0px 0px 1px;
 }
@@ -67,14 +67,17 @@ body .board .column-container .column {
   text-align: left;
   position: relative;
   border-radius: 10px;
-  border: 1px solid black;
 }
 
 body .board .column-container .column h2 {
   padding: 10px 20px;
-  color: black;
+  color: white;
   font-size: 15px;
   border-bottom: 1px solid black;
+  background-color: #023855;
+  margin: 0;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 }
 
 body .board .column-container .column .btn-delete {
@@ -83,10 +86,12 @@ body .board .column-container .column .btn-delete {
   color: black;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  border: none;
 }
 
 body .board .column-container .column .btn-delete:hover {
   background-color: #023855;
+  border: none;
   font-weight: bold;
   box-shadow: 0px 0px 0px 1px;
 }
@@ -95,10 +100,12 @@ body .board .column-container .column .add-card {
   width: 100%;
   cursor: pointer;
   color: black;
+  border: none;
 }
 
 body .board .column-container .column .add-card:hover {
   background-color: #023855;
+  border: none;
   font-weight: bold;
   box-shadow: 0px 0px 0px 1px;
 }
@@ -117,6 +124,8 @@ body .board .column-container .column .column-card-list .card {
   min-width: 260px;
   border-radius: 5px;
   min-height: 50px;
+  border: 1px solid black;
+  margin-top: 20px;
 }
 
 body .board .column-container .column .column-card-list .card .card-description {

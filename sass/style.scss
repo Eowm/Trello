@@ -1,21 +1,22 @@
 body {
    padding:0;
    margin:0 auto;
-   background-color: #9E9CA3;
+   background-color: #048CAC;
     .board {
-       max-width: 1200px;
        margin: 0 auto;
        text-align: center;
-       	background-color:#EFEDE3;
+       	background-color:#048CAC;
         h1 {
             text-align: center;
-            color: #655686;
-            padding: 20px 0 0 0;
-            font-size: 60px;
+            color: #E2E4E6;
+            padding: 20px 0;
+            font-size: 15px;
             text-transform: uppercase;
             font-weight: bold;
             letter-spacing: 3px;
             margin: 0;	
+            background-color:#023855;
+            font-style: italic;
         }
         .big{
         	width: 100px;
@@ -42,36 +43,47 @@ body {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
-            background-color: #655686;
+            background-color: #048CAC;
             max-width: 1200px;
             margin: auto;
             padding: 30px 0;
             margin-top: 50px;
             .column {
-               background-color:#EFEDE3;
+               background-color:#E2E4E6;
                width: 300px;
                min-height: 200px;
                margin: 10px;
-               text-align: center;
+               text-align: left;
                position: relative;
+               border-radius: 10px;
+               border: 1px solid black;
                 h2 {
-                	padding-bottom: 10px;
-                	color: #655686;
-                	text-transform: uppercase;
-                	font-size: 30px;
-                	letter-spacing: 2px;
+                	padding: 10px 20px;
+                	color: black;
+                	font-size: 15px;
+                	border-bottom: 1px solid black;
                 }
                 .btn-delete {
                     width: 100%;
-                    background-color: #F3002B;	
-                    border-color: #F3002B;
                     cursor: pointer;
+                    color: black;
+                    border-bottom-left-radius: 10px;
+                    border-bottom-right-radius: 10px;
+                    &:hover {
+            			background-color:#023855;
+            			font-weight:bold;
+            			box-shadow: 0px 0px 0px 1px;
+            		}
                 }
                 .add-card {
 					width:100%;
-					background-color: #2CA60C;
-					border-color: #2CA60C;
 					cursor: pointer;
+					color: black;
+					&:hover {
+            			background-color:#023855;
+            			font-weight:bold;
+            			box-shadow: 0px 0px 0px 1px;
+            		}
                 }
                 .column-card-list {
                 	padding: 0;
@@ -81,10 +93,10 @@ body {
             		flex-wrap: wrap;
            			justify-content: space-around;
                     .card {
-                        background-color: darkgray;
-                        min-width: 100px;
-                        margin: 20px;
-                        max-width: 260px;
+                        background-color: white;
+                        min-width: 260px;
+                        border-radius: 5px;
+                        min-height: 50px;
                         .card-description {
                             font-style: italic;
                             font-weight: bold;
